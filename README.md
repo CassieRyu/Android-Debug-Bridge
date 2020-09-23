@@ -26,7 +26,7 @@
 `$ adb shell am start -W -S -R $count com.example.demo1/.MainActivity` 
 combine above two commands, start app with $count times
  
- <img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/Picture1.png">
+ <img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/pictures/Picture1.png">
 
 * Metrics(COLD): Total Time <= 2s
 ### Warm start - start app with backgound app running
@@ -34,7 +34,7 @@ combine above two commands, start app with $count times
 
 `$ adb shell am start -W com.example.demo1/.MainActivity`			start app
 
-<img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/Picture2.png">
+<img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/pictures/Picture2.png">
 
 Metrics: total time <= 0.5s
 
@@ -50,7 +50,7 @@ In emulator: open Dev Tools -> Developer options -> Profile GPU rendenring -> In
 
 Metrics: Janky frames rate <= 40%
 
-<img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/Picture3.png">
+<img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/pictures/Picture3.png">
 
 Notes: require massive pages rendering would get more reliable values.
 
@@ -64,7 +64,7 @@ Metics: (able to use CPU profiler tool)
 3.	Background with Screen Off Memory Utilization <= 400MB (after screen off for 1 minite)
 
 `$ adb shell dumpsys meminfo com.example.demo1`				list current memory status
-<img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/Picture4.png">
+<img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/pictures/Picture4.png">
 
 Notes: 
 1.	The first two rows(Native and Dalvik Heap) are important, they’re memory of JNI and Java, if keep growth, might be memory leakage.
@@ -80,7 +80,7 @@ Metrics:
 1.	Background with Screen Bright CPU Utilization  <= 2% (after background for 5 minites)
 2.	Background with Screen Off CPU Utilization <= 2% (after screen off for 5 minites)
 
-<img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/Picture5.png">
+<img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/pictures/Picture5.png">
 
 ## Monkey Test
 * Reference: https://developer.android.com/studio/test/monkey?hl=zh-cn
