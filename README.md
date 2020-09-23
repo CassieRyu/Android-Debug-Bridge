@@ -39,6 +39,8 @@ combine above two commands, start app with $count times
 Metrics: total time <= 0.5s
 
 Notes: write a shell scripts, to start multi times and get the average launch time;
+### Example run script with optional parameter as test tiems
+./test_startup_time.sh count[Optional]
 
 ## FPS (frame per sec)
 
