@@ -28,7 +28,7 @@ combine above two commands, start app with $count times
  
  <img src="https://github.com/CassieRyu/Android-Debug-Bridge/blob/master/pictures/Picture1.png">
 
-* Metrics(COLD): Total Time <= 2s
+* Metrics(COLD): Total Time <= 2s （refer to: https://www.china-sga.com/ws/2/2/index）
 ### Warm start - start app with backgound app running
 `$ adb shell input keyevent 3`			press 'home' button
 
